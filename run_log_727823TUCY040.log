@@ -1,0 +1,13 @@
+[2026-03-29 17:46:23] Roll Number: 727823TUCY040 | run_tool.py started
+[2026-03-29 17:46:23] === TEST CASE 1: Baseline & Integrity Verification (No Tampering) ===
+[2026-03-29 17:46:23]   [PASS] Baseline & integrity check — file intact
+[2026-03-29 17:46:23] === TEST CASE 2: Detect Content Modification (Tampering) ===
+[2026-03-29 17:46:24]   [PASS] Detect file content modification
+[2026-03-29 17:46:24] === TEST CASE 3: Detect File Deletion ===
+[2026-03-29 17:46:24]   [PASS] Detect file deletion
+[2026-03-29 17:46:24] === TEST CASE 4: Multi-Algorithm Hash Comparison ===
+[2026-03-29 17:46:24]   [PASS] Multi-algorithm hash verification
+[2026-03-29 17:46:24] === TEST CASE 5: Multi-File Monitoring & Baseline Export ===
+[2026-03-29 17:46:24]   [PASS] Multi-file monitoring & baseline JSON export
+[2026-03-29 17:46:24] Results saved to results_727823TUCY040.json
+[2026-03-29 17:46:24] Roll Number: 727823TUCY040 | Test Summary: 5/5 PASSED

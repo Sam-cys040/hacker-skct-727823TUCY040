@@ -1,0 +1,4 @@
+# File Integrity Monitor — Samuvel A | 727823TUCY040
+# No external packages required.
+# All dependencies are Python standard library modules:
+# hashlib, sqlite3, json, os, sys, datetime, time

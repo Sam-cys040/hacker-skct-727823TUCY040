@@ -1,0 +1,57 @@
+# GitHub Setup & Commit Plan
+# Student: Samuvel A | Roll: 727823TUCY040
+# Project: File Integrity Monitor
+
+## Step 1 — Create GitHub Repo
+Repo name (exact): hacker-skct-727823TUCY040
+Visibility: Public
+
+## Step 2 — Initialize & Push
+
+git init
+git remote add origin https://github.com/<your-username>/hacker-skct-727823TUCY040.git
+git branch -M main
+
+## Step 3 — 7 Commits Across 3+ Different Days
+
+--- DAY 1 (e.g. Monday) ---
+Commit 1:
+  git add README.md requirements.txt
+  git commit -m "727823TUCY040: Initial project setup - README and requirements"
+
+Commit 2:
+  git add tool_main.py
+  git commit -m "727823TUCY040: Add core File Integrity Monitor with SHA256/MD5/SHA1"
+
+Commit 3:
+  git add pipeline_727823TUCY040.yml
+  git commit -m "727823TUCY040: Add pipeline YAML definition for FIM"
+
+--- DAY 2 (e.g. Wednesday) ---
+Commit 4:
+  git add setup_lab.py run_tool.py
+  git commit -m "727823TUCY040: Add setup_lab and run_tool pipeline scripts"
+
+Commit 5:
+  git add analyze_results.py
+  git commit -m "727823TUCY040: Add analyze_results with alert table and summary"
+
+--- DAY 3 (e.g. Friday) ---
+Commit 6:
+  git add demo_notebook.ipynb
+  git commit -m "727823TUCY040: Add Jupyter demo notebook with 3 FIM test cases"
+
+Commit 7:
+  git add report.md
+  git commit -m "727823TUCY040: Add 2-page report with sqlite3.OperationalError analysis"
+
+git push -u origin main
+
+## Notes
+- NEVER do all commits on the same day (flagged by faculty)
+- Roll number 727823TUCY040 must appear in every commit message
+- Faculty will clone and run:
+    python3 setup_lab.py
+    python3 run_tool.py
+    python3 analyze_results.py
+- No pip install needed — pure Python stdlib

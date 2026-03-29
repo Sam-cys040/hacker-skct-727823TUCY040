@@ -1,0 +1,60 @@
+project_name: "SKCT_727823TUCY040_FileIntegrityMonitor"
+student_name: "Samuvel A"
+roll_number: "727823TUCY040"
+date: "2026-03-29"
+
+pipeline:
+  name: "File Integrity Monitor Pipeline"
+  description: >
+    End-to-end pipeline for setting up, running, and analyzing
+    the File Integrity Monitor tool using SHA-256, MD5, and SHA-1
+    hashing with SQLite-backed baseline and alert storage.
+
+  stages:
+    - stage: 1
+      name: "setup"
+      description: "Verify Python version, stdlib imports, init DB, create directories"
+      script: "setup_lab.py"
+      interpreter: "python3"
+      outputs:
+        - "setup_log_727823TUCY040.log"
+        - "fim_727823TUCY040.db"
+        - "test_files_727823TUCY040/"
+        - "logs_727823TUCY040/"
+      on_failure: "abort"
+
+    - stage: 2
+      name: "run_tool"
+      description: "Execute all 5 FIM test cases and record results to JSON"
+      script: "run_tool.py"
+      interpreter: "python3"
+      depends_on: ["setup"]
+      outputs:
+        - "run_log_727823TUCY040.log"
+        - "results_727823TUCY040.json"
+        - "baseline_727823TUCY040.json"
+      on_failure: "continue_with_partial"
+
+    - stage: 3
+      name: "analyze"
+      description: "Parse results, print summary table, generate analysis report"
+      script: "analyze_results.py"
+      interpreter: "python3"
+      depends_on: ["run_tool"]
+      outputs:
+        - "analysis_log_727823TUCY040.log"
+        - "analysis_report_727823TUCY040.txt"
+      on_failure: "continue_with_partial"
+
+environment:
+  python_min_version: "3.8"
+  required_packages: []
+  stdlib_only: true
+  os: "Linux (Kali) / Windows / macOS"
+  isolated_vm: true
+
+notes:
+  - "No external packages required — uses Python standard library only."
+  - "All test files are created and cleaned up within the project folder."
+  - "Roll number appears in all output filenames and script headers."
+  - "All testing performed on owned/isolated VM — no external systems targeted."

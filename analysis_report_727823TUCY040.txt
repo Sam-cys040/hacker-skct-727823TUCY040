@@ -1,0 +1,40 @@
+=================================================================
+  Analysis Report — File Integrity Monitor
+  Student     : Samuvel A
+  Roll Number : 727823TUCY040
+  Generated   : 2026-03-29 17:46:56
+=================================================================
+
+TEST RESULTS TABLE
+--------------------------------------------------------------------------------------------
+Test ID  Description                                      Status Timestamp
+--------------------------------------------------------------------------------------------
+TC1      Baseline & integrity check — file intact         PASS   2026-03-29 17:46:23
+TC2      Detect file content modification                 PASS   2026-03-29 17:46:24
+TC3      Detect file deletion                             PASS   2026-03-29 17:46:24
+TC4      Multi-algorithm hash verification                PASS   2026-03-29 17:46:24
+TC5      Multi-file monitoring & baseline JSON export     PASS   2026-03-29 17:46:24
+--------------------------------------------------------------------------------------------
+
+ALERTS TABLE
+------------------------------------------------------------------------------------------
+ALERTS RECORDED:
+Filepath                       Change Type            Detected At
+------------------------------------------------------------------------------------------
+tc2_727823.py                  HASH_CHANGED           2026-03-29 17:46:24
+tc2_727823.py                  SIZE_CHANGED           2026-03-29 17:46:24
+tc3_727823.cfg                 FILE_DELETED           2026-03-29 17:46:24
+------------------------------------------------------------------------------------------
+
+SUMMARY
+  Total      : 5
+  Passed     : 5
+  Failed     : 0
+  Pass Rate  : 100.0%
+
+FINDINGS
+  - SHA-256 hash changes reliably detect any content modification.
+  - File deletion is correctly identified when hash returns None.
+  - Multi-algorithm verification (SHA256, MD5, SHA1) confirms integrity.
+  - Baseline export to JSON enables offline audit and comparison.
+  - All alerts are stored in SQLite for forensic review.

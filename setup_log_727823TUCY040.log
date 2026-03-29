@@ -1,0 +1,24 @@
+[2026-03-29 17:45:09] Roll Number: 727823TUCY040 | setup_lab.py started
+[2026-03-29 17:45:09] Python version: 3.12.7
+[2026-03-29 17:45:09]   ✓ Python version OK
+[2026-03-29 17:45:09] Checking required packages (File Integrity Monitor uses stdlib only)...
+[2026-03-29 17:45:09]   ✓ hashlib — OK
+[2026-03-29 17:45:09]   ✓ sqlite3 — OK
+[2026-03-29 17:45:09]   ✓ json — OK
+[2026-03-29 17:45:09]   ✓ os — OK
+[2026-03-29 17:45:09]   ✓ sys — OK
+[2026-03-29 17:45:09]   ✓ datetime — OK
+[2026-03-29 17:45:09]   ✓ time — OK
+[2026-03-29 17:45:09] Initializing SQLite database for FIM...
+[2026-03-29 17:45:10]   ✓ Database initialized: fim_727823TUCY040.db
+[2026-03-29 17:45:10] Setting up test directory structure...
+[2026-03-29 17:45:10]   ✓ Directory ready: test_files_727823TUCY040/
+[2026-03-29 17:45:10]   ✓ Directory ready: logs_727823TUCY040/
+[2026-03-29 17:45:10] Checking project folder structure...
+[2026-03-29 17:45:10]   ✓ — tool_main.py
+[2026-03-29 17:45:10]   ✓ — setup_lab.py
+[2026-03-29 17:45:10]   ✓ — run_tool.py
+[2026-03-29 17:45:10]   ✓ — analyze_results.py
+[2026-03-29 17:45:10]   ✓ — requirements.txt
+[2026-03-29 17:45:10]   ✓ — pipeline_727823TUCY040.yml
+[2026-03-29 17:45:10] Roll Number: 727823TUCY040 | Lab setup completed successfully.

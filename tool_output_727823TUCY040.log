@@ -1,0 +1,12 @@
+[2026-03-29 17:46:23] [BASELINE] Recorded: tc1_727823.txt | SHA256=9c1beb75f7326f7b... | Size=51B
+[2026-03-29 17:46:23] [OK] No changes detected: tc1_727823.txt
+[2026-03-29 17:46:23] [BASELINE] Recorded: tc2_727823.py | SHA256=2c22bbf97ab15e23... | Size=45B
+[2026-03-29 17:46:24] [ALERT] HASH CHANGED: tc2_727823.py | Old=2c22bbf97ab15e23... New=fda5be0567a2e90f...
+[2026-03-29 17:46:24] [ALERT] MD5 CHANGED: tc2_727823.py
+[2026-03-29 17:46:24] [ALERT] SIZE CHANGED: tc2_727823.py | Old=45B New=83B
+[2026-03-29 17:46:24] [BASELINE] Recorded: tc3_727823.cfg | SHA256=dadbb6d815ac1fe6... | Size=43B
+[2026-03-29 17:46:24] [ALERT] FILE DELETED: tc3_727823.cfg
+[2026-03-29 17:46:24] [BASELINE] Recorded: tc4_727823.sh | SHA256=cb5715fada3ce605... | Size=58B
+[2026-03-29 17:46:24] [BASELINE] Recorded: tc5_727823.log | SHA256=528b29e020b535ce... | Size=40B
+[2026-03-29 17:46:24] [BASELINE] Recorded: tc1_727823.txt | SHA256=9c1beb75f7326f7b... | Size=51B
+[2026-03-29 17:46:24] [EXPORT] Baseline exported to baseline_727823TUCY040.json (5 file(s))
